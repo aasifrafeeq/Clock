@@ -33,6 +33,5 @@ button{
 }
 
 button:hover{
-    border-bottom: rgb(155, 35, 155);
-    border-bottom-style: solid;
+    border-bottom: rgb(155, 35, 155) solid;
 }

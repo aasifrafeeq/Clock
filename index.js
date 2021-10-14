@@ -17,6 +17,8 @@ fetch(`https://worldtimeapi.org/api/timezone/Asia/Kolkata`)
 
 document.querySelectorAll("button").forEach(button =>{
     button.onclick = () =>{
+        document.querySelectorAll("button").forEach(btn => btn.style="border-bottom:none;")
+        button.style = "border-bottom: rgb(155, 35, 155) solid;"
         fetch(`https://worldtimeapi.org/api/timezone/${button.value}`)
         .then(response => response.json())
         .then(data => {
